@@ -6,4 +6,9 @@ public class Gans {
 		
 		System.out.println("Schnattern");
 	}
+	
+	public String toString() {
+		
+		return "Gans";
+	}
 }

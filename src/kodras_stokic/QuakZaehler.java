@@ -20,4 +20,19 @@ public class QuakZaehler implements Quakfaehig {
 		
 		return anzahlDerQuaks;
 	}
+	
+	public void registriereBeobachter(Beobachter beobachter) {
+
+		ente.registriereBeobachter(beobachter);
+	}
+
+	public void benachrichtigeBeobachtende() {
+
+		ente.benachrichtigeBeobachtende();
+	}
+	
+	public String toString() {
+		
+		return ente.toString();
+	}
 }
