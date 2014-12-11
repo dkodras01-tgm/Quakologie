@@ -2,23 +2,19 @@ package kodras_stokic;
 
 public class ZaehlendeEntenFabrik extends AbstraktEntenFabrik {
 	
-	@Override
 	public Quakfaehig erzeugeStockEnte() {
-		return new StockEnte();
+		return new QuakZaehler(new StockEnte());
 	}
 	
-	@Override
 	public Quakfaehig erzeugeMoorEnte() {
-		return new MoorEnte();
+		return new QuakZaehler(new MoorEnte());
 	}
 	
-	@Override
 	public Quakfaehig erzeugeLockPfeife() {
-		return new LockPfeife();
+		return new QuakZaehler(new LockPfeife());
 	}
 	
-	@Override
 	public Quakfaehig erzeugeGummiEnte() {
-		return new GummiEnte();
+		return new QuakZaehler(new GummiEnte());
 	}
 }
