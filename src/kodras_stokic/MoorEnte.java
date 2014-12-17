@@ -26,7 +26,6 @@ public class MoorEnte implements Quakfaehig {
 	}
 	
 	public String toString() {
-		
 		return "MoorEnte";
 	}
 }
