@@ -6,12 +6,13 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
 import kodras_stokic.MoorEnte;
+import kodras_stokic.StockEnte;
 
 import org.junit.Before;
 import org.junit.Test;
 
-public class TestMoorEnte {
-	
+public class TestStockEnte {
+
 	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 	private final String seperator = System.getProperty("line.separator");
 	
@@ -22,14 +23,14 @@ public class TestMoorEnte {
 	
 	@Test
 	public void testQuaken() {
-		MoorEnte me = new MoorEnte();
+		StockEnte me = new StockEnte();
 		me.quaken();
 		assertEquals("Quack"+seperator,outContent.toString());
 	}
 	
 	@Test
 	public void testToString() {
-		MoorEnte me = new MoorEnte();
-		assertEquals("MoorEnte",me.toString());
+		StockEnte me = new StockEnte();
+		assertEquals("StockEnte",me.toString());
 	}
 }

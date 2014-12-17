@@ -1,5 +1,11 @@
 package kodras_stokic;
 
+/**
+ * Abstrakte Klasse fuer Entenerzeugung
+ * 
+ * @author Dominik Kodras
+ * @author Stefan Stokic
+ */
 public class EntenFabrik extends AbstraktEntenFabrik {
 	
 	public Quakfaehig erzeugeStockEnte() {

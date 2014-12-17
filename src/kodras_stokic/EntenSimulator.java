@@ -1,7 +1,18 @@
 package kodras_stokic;
 
+/**
+ * Klasse zum simulieren der Quakologie
+ * 
+ * @author Dominik Kodras
+ * @author Stefan Stokic
+ */
 public class EntenSimulator {
 
+	/**
+	 * Main-Methode ruft die Simulation auf
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args) {
 
 		EntenSimulator entenSimulator = new EntenSimulator();
@@ -10,6 +21,11 @@ public class EntenSimulator {
 		entenSimulator.simulieren(entenFabrik);
 	}
 
+	/**
+	 * Gesamte Simulation
+	 * 
+	 * @param entenfabrik
+	 */
 	public void simulieren(AbstraktEntenFabrik entenfabrik) {
 
 		Quakfaehig moorEnte = entenfabrik.erzeugeMoorEnte();
@@ -47,6 +63,11 @@ public class EntenSimulator {
 		System.out.println("\nDie Enten haben " + QuakZaehler.getQuaks() + " mal gequakt.");
 	}
 
+	/**
+	 * Ente fuehrt das quaken aus
+	 * 
+	 * @param ente
+	 */
 	public void simulieren(Quakfaehig ente) {
 
 		ente.quaken();
